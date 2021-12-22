@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <header>ALL  ABOUT  ART
+            <!-- buttons from bootstrap -->
+            <div>
+                <button type="button" class="btn btn-light" id="light" style="float: right;">Light Mode</button>
+                <button type="button" class="btn btn-dark" id="dark" style="float: right;">Dark Mode</button>
+            </div>
+        </header>
+
+        <!-- nav-pills from bootstrap -->
+        <nav>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./artists.html">Artists</a></li>
+                <li class="nav-item"><a class="nav-link" href="./artworks.html">Artworks</a></li>
+                <li class="nav-item"><a class="nav-link" href="./media.html">Media</a></li>
+                <li class="nav-item"><a class="nav-link" href="./museums.html">Museums</a></li>
+            </ul>
+        </nav>
+
+        <h1>Welcome!</h1>
+        <h2>About Me</h2>
+        <p>Hi, my name is Juliet! I love creating and looking at art.</p>
+        <p>What is your name?</p>
+        <form onsubmit="greet(); return false;">
+            <input type="text" id="name">
+            <input type="submit">
+        </form><br>
+        <h2>About This Website</h2>
+        <p>Learn about famous artists, artworks, media, and museums!</p>
+        <img class="center_image" src="https://www.oxy.edu/sites/default/files/landing-page/banner-images/art-art-history_main_1440x800.jpg" alt="Paint and brushes">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script>
+            function greet()
+            {
+                let name = document.querySelector("#name").value;
+                if (name === "")
+                {
+                    alert("Welcome!");
+                }
+                else
+                {
+                    alert("Welcome, " + name + "!");
+                }
+            }
+            document.querySelector("#light").onclick = function() {
+                document.querySelector("body").style.backgroundColor = "white";
+                document.querySelector("body").style.color = "black";
+            };
+            document.querySelector("#dark").onclick = function() {
+                document.querySelector("body").style.backgroundColor = "black";
+                document.querySelector("body").style.color = "white";
+            };
+        </script>
+    </body>
+</html>

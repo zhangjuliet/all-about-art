@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <header>ALL  ABOUT  ART
+            <!-- buttons from bootstrap -->
+            <div>
+                <button type="button" class="btn btn-light" id="light" style="float: right;">Light Mode</button>
+                <button type="button" class="btn btn-dark" id="dark" style="float: right;">Dark Mode</button>
+            </div>
+        </header>
+
+        <!-- nav-pills from bootstrap -->
+        <nav>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./artists.html">Artists</a></li>
+                <li class="nav-item"><a class="nav-link" href="./artworks.html">Artworks</a></li>
+                <li class="nav-item"><a class="nav-link" href="./media.html">Media</a></li>
+                <li class="nav-item"><a class="nav-link active" href="./museums.html">Museums</a></li>
+            </ul>
+        </nav>
+
+        <h1>Art Museums</h1>
+        <h5 class="center_text">Click on the museum name to visit the official website!</h5>
+        <table>
+            <tr>
+                <th>Museum</th>
+                <th>Location</th>
+                <th>Year Opened</th>
+                <th>Notable Pieces</th>
+            </tr>
+            <tr>
+                <td><a href="https://www.louvre.fr/en">Louvre Museum</a></td>
+                <td>Paris</td>
+                <td>1793</td>
+                <td>Leonardo da Vinci's <i>Mona Lisa</i>, Alexandros of Antioch's <i>Venus de Milo</i></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.moma.org/">Museum of Modern Art</a></td>
+                <td>New York City</td>
+                <td>1929</td>
+                <td>Vincent van Gogh's <i>The Starry Night</i>, Salvador Dali's <i>The Persistence of Memory</i></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.nationalgallery.org.uk/">National Gallery</a></td>
+                <td>London</td>
+                <td>1824</td>
+                <td>Sandro Botticelli's <i>Venus and Mars</i>, Vincent van Gogh's <i>Sunflowers</i></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.metmuseum.org/">Metropolitan Museum of Art</a></td>
+                <td>New York City</td>
+                <td>1870</td>
+                <td>Jacques-Louis David's <i>The Death of Socrates</i>, Emanuel Leutze's <i>Washington Crossing the Delaware</i></td>
+            </tr>
+            <tr>
+                <td><a href="https://m.musee-orsay.fr/en/home.html">Musée d'Orsay</a></td>
+                <td>Paris</td>
+                <td>1986</td>
+                <td>Edgar Degas's <i>The Ballet Class</i>, James Abbott McNeill Whistler's <i>Whistler's Mother</i></td>
+            </tr>
+        </table><br>
+        <img class="center_image" src="https://www.artmuseumgr.org/wp-content/uploads/2018/03/VisitHeader_960@2x.jpg" alt="Art Museum">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script>
+            document.querySelector("#light").onclick = function() {
+                document.querySelector("body").style.backgroundColor = "white";
+                document.querySelector("body").style.color = "black";
+            }
+            document.querySelector("#dark").onclick = function() {
+                document.querySelector("body").style.backgroundColor = "black";
+                document.querySelector("body").style.color = "white";
+                document.querySelector("tr").style.color = "black";
+            }
+        </script>
+    </body>
+</html>

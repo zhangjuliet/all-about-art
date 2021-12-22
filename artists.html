@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <header>ALL  ABOUT  ART
+            <!-- buttons from bootstrap -->
+            <div>
+                <button type="button" class="btn btn-light" id="light" style="float: right;">Light Mode</button>
+                <button type="button" class="btn btn-dark" id="dark" style="float: right;">Dark Mode</button>
+            </div>
+        </header>
+
+        <!-- nav-pills from bootstrap -->
+        <nav>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="./artists.html">Artists</a></li>
+                <li class="nav-item"><a class="nav-link" href="./artworks.html">Artworks</a></li>
+                <li class="nav-item"><a class="nav-link" href="./media.html">Media</a></li>
+                <li class="nav-item"><a class="nav-link" href="./museums.html">Museums</a></li>
+            </ul>
+        </nav>
+
+        <h1>Famous Artists</h1>
+        <table>
+            <tr>
+                <th>Leonardo da Vinci</th>
+                <th>Vincent van Gogh</th>
+                <th>Henri Matisse</th>
+            </tr>
+            <tr>
+                <td><img src="https://www.biography.com/.image/t_share/MTY2MzU4MjUzMDA4MDcwMzE4/portrait-of-leonardo-da-vinci-1452-1519-getty.jpg" alt="Leonardo da Vinci" height=200></td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/220px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg" alt="Vincent van Gogh" height=200></td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Henri_Matisse%2C_1913%2C_photograph_by_Alvin_Langdon_Coburn.jpg/220px-Henri_Matisse%2C_1913%2C_photograph_by_Alvin_Langdon_Coburn.jpg" alt="Henri Matisse" height=200></td>
+            </tr>
+            <tr>
+                <th>Claude Monet</th>
+                <th>Pablo Picasso</th>
+                <th>Andy Warhol</th>
+            </tr>
+            <tr>
+                <td><img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE5NDg0MDU1MDcyNzY5NTUx/claude-monet-9411771-2-402.jpg" alt="Claude Monet" height=200></td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Portrait_de_Picasso%2C_1908.jpg" alt="Pablo Picasso" height=200></td>
+                <td><img src="https://hamiltonselway.com/wp-content/uploads/2017/08/Warhol.jpg" alt="Andy Warhol" height=200></td>
+            </tr>
+            <tr>
+                <th>Salvador Dalí</th>
+                <th>Frida Kahlo</th>
+                <th>Jackson Pollock</th>
+            </tr>
+            <tr>
+                <td><img src="https://cdn.britannica.com/40/79340-050-7C62816E/Salvador-Dali.jpg" alt="Salvador Dalí" height=200></td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg" alt="Frida Kahlo" height=200></td>
+                <td><img src="https://www.biography.com/.image/t_share/MTE5NTU2MzE2MzQ3NTMyODEx/jackson-pollock-9443818-1-402.jpg" alt="Jackson Pollock" height=200></td>
+            </tr>
+        </table>
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script>
+            document.querySelector("#light").onclick = function() {
+                document.querySelector("body").style.backgroundColor = "white";
+                document.querySelector("body").style.color = "black";
+            }
+            document.querySelector("#dark").onclick = function() {
+                document.querySelector("body").style.backgroundColor = "black";
+                document.querySelector("body").style.color = "white";
+            }
+        </script>
+    </body>
+</html>

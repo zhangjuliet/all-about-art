@@ -1,0 +1,65 @@
+header {
+    color: white;
+    background-color: teal;
+    font-size: 50px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+li a:hover {
+    background-color: pink;
+}
+form {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+h1 {
+    text-align: center;
+    color: darkmagenta;
+    font-style: italic;
+    padding-top: 20px;
+}
+h2 {
+    color: teal;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+h3 {
+    font-size: 30px;
+    font-style: italic;
+    color: black;
+    background-color: white;
+}
+h4 {
+    color: pink;
+}
+h6 {
+    font-weight: lighter;
+}
+p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.center_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.center_text {
+    text-align: center;
+}
+table {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: lightblue;
+}
